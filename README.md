@@ -23,7 +23,7 @@
 ## Запуск автотестов
 Порядок запуска автотестов:
 
-1. Склонировать [репозиторий](https://github.com/LSOrlova/diplom_qamid_app_vers_15032024) . Открыть склонированый проект в AndroidStudio
+1. Склонировать [репозиторий](https://github.com/LSOrlova/diplom_vers_3) . Открыть склонированый проект в AndroidStudio
 
 2. Установить приложение "Мобильный хоспис" на мобильное устройство / эмулятор. Запустить эмулятор Pixel 6 API 29 или подключить устройство для тестирования.
 
@@ -31,7 +31,7 @@
 
 
 ## Отчетная документация
-* [План тестирования](https://github.com/LSOrlova/diplom_qamid_app_vers_15032024/blob/master/Plan.md)
-* [Чек-лист](https://github.com/LSOrlova/diplom_qamid_app_vers_15032024/blob/master/check_list_hospis.xlsx)
-* [Тест-кейсы](https://github.com/LSOrlova/diplom_qamid_app_vers_15032024/blob/master/test_cases_in_hospis.xlsx)
-* [Результаты](https://github.com/LSOrlova/diplom_qamid_app_vers_15032024/blob/master/Result.md)
+* [План тестирования](https://github.com/LSOrlova/diplom_vers_3/blob/master/Plan.md))
+* [Чек-лист](https://github.com/LSOrlova/diplom_vers_3/blob/master/check_list_hospis.xlsx)
+* [Тест-кейсы](https://github.com/LSOrlova/diplom_vers_3/blob/master/test_cases_in_hospis.xlsx)
+* [Результаты]([https://github.com/LSOrlova/diplom_qamid_app_vers_15032024/blob/master/Result.md)](](https://github.com/LSOrlova/diplom_vers_3/blob/master/Result.md)
