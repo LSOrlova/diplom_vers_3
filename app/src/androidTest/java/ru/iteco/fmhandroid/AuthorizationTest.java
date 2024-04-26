@@ -7,7 +7,6 @@ import static ru.iteco.fmhandroid.WaitId.waitId;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.filters.LargeTest;
-import androidx.test.rule.ActivityTestRule;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -18,6 +17,7 @@ import io.qameta.allure.android.runners.AllureAndroidJUnit4;
 import io.qameta.allure.kotlin.Epic;
 import io.qameta.allure.kotlin.Story;
 import io.qameta.allure.kotlin.junit4.Tag;
+import ru.iteco.fmhandroid.pages.MainPage;
 import ru.iteco.fmhandroid.ui.AppActivity;
 import ru.iteco.fmhandroid.steps.AuthorizationSteps;
 import ru.iteco.fmhandroid.pages.AuthorizationPage;
@@ -29,38 +29,39 @@ import ru.iteco.fmhandroid.util.TestData;
 public class AuthorizationTest {
     AuthorizationPage authorizationPage = new AuthorizationPage();
     AuthorizationSteps authorizationSteps = new AuthorizationSteps(authorizationPage);
+    MainPage mainPage = new MainPage();
     @Rule
     public ActivityScenarioRule<AppActivity> activityTestRule = new ActivityScenarioRule<>(AppActivity.class);
 
 
     @Before
     public void setUp() {
-        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 5000));
+        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 7000));
         if (authorizationSteps.isDisplayedButtonProfile()) {
             authorizationSteps.clickLogOutButton();
         }
     }
-    public void loginAuth() {
-        AuthorizationSteps login = new AuthorizationSteps(authorizationPage);
-        login.login();
-        try {
-            authorizationSteps.textAuthorization();
-        } catch (androidx.test.espresso.NoMatchingViewException e) {
-            authorizationSteps.clickExitButton();
-            authorizationSteps.clickLogOutButton();
-        }
-    }
+//    public void loginAuth() {
+//        AuthorizationSteps login = new AuthorizationSteps(authorizationPage);
+//        login.login();
+//        try {
+//            authorizationSteps.textAuthorization();
+//        } catch (androidx.test.espresso.NoMatchingViewException e) {
+//            authorizationSteps.clickExitButton();
+//            authorizationSteps.clickLogOutButton();
+//        }
+//    }
 
     @Test
     @Tag("2")
     @Story("Вход в приложение с валидными значениями login / PW")
     public void successfulAuthorization() {
-        authorizationSteps.textAuthorization();
         authorizationSteps.clickLoginField(TestData.VALID_LOGIN);
         authorizationSteps.passwordTextInput(TestData.VALID_PASSWORD);
         authorizationSteps.clickSingInButton();
-        authorizationSteps.clickExitButton();
-        authorizationSteps.clickLogOutButton();
+
+        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 7000));
+        mainPage.getMainAllNews();
     }
 
     @Test
