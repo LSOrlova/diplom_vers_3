@@ -34,4 +34,4 @@
 * [План тестирования](https://github.com/LSOrlova/diplom_vers_3/blob/master/Plan.md))
 * [Чек-лист](https://github.com/LSOrlova/diplom_vers_3/blob/master/check_list_hospis.xlsx)
 * [Тест-кейсы](https://github.com/LSOrlova/diplom_vers_3/blob/master/test_cases_in_hospis.xlsx)
-* [Результаты]([https://github.com/LSOrlova/diplom_qamid_app_vers_15032024/blob/master/Result.md)](](https://github.com/LSOrlova/diplom_vers_3/blob/master/Result.md)
+* [Результаты](https://github.com/LSOrlova/diplom_vers_3/blob/master/Result.md)
