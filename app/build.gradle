@@ -29,6 +29,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
         freeCompilerArgs += ["-Xmx2g"]
@@ -103,6 +104,7 @@ dependencies {
     androidTestImplementation "androidx.test:core-ktx:$test_core_version"
     androidTestImplementation "androidx.test.ext:junit-ktx:$test_junit_version"
     androidTestImplementation "androidx.test:runner:$test_core_version"
+    androidTestImplementation "androidx.test:orchestrator:1.4.2"
 
 
     // UiAutomator Testing
@@ -135,5 +137,12 @@ dependencies {
     androidTestImplementation "io.qameta.allure:allure-kotlin-commons:$allure_version"
     androidTestImplementation "io.qameta.allure:allure-kotlin-junit4:$allure_version"
 }
+task allureReport(type: Exec) {
+    dependsOn = ['connectedAndroidTest']
+    description = 'Generate Allure report'
+    commandLine 'allure', 'generate', 'build/allure-results', '--clean', '-o', 'build/reports/allure-report'
+}
+
+
 
 
