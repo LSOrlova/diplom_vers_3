@@ -29,6 +29,11 @@
 
 3. Запустить тесты командой ./gradlew connectedAndroidTest
 
+### Oтчет
+
+1. В папке эмулятора data/data/ru.iteco.fmhandroid/files скопировать папку allure-results в проект
+2. Для генерации отчёта и просмотра необходимо в директории с папкой allure-results выполнить команду в командной строке allure serve
+
 
 ## Отчетная документация
 * [План тестирования](https://github.com/LSOrlova/diplom_vers_3/blob/master/Plan.md))
