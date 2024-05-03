@@ -1,0 +1,113 @@
+{
+    "name": "loginPasswordAreEmpty",
+    "start": 1714741806614,
+    "stop": 1714741815710,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Отображается страница Авторизации",
+            "start": 1714741813426,
+            "stop": 1714741813428,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать кнопку Войти",
+            "start": 1714741813445,
+            "stop": 1714741813445,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ошибка Something went wrong. Try again later.",
+            "start": 1714741814083,
+            "stop": 1714741814083,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "31c57120-5c75-4896-8740-840c44e2fa53",
+    "historyId": "66b5257d3e819d9830a3fbf4b8d3d60f",
+    "fullName": "ru.iteco.fmhandroid.AuthorizationTest.loginPasswordAreEmpty",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.AuthorizationTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "loginPasswordAreEmpty"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.AuthorizationTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1748)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Вход в приложение - отправка пустой формы"
+        },
+        {
+            "name": "tag",
+            "value": "3"
+        },
+        {
+            "name": "epic",
+            "value": "Functional tests Authorization page"
+        }
+    ]
+}

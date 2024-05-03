@@ -75,7 +75,7 @@ public class AuthorizationPage {
             return onView(allOf(withId(AUTHORIZATION_IMAGE_BUTTON_ID)));
         }
     }
-    private final int appBarFragmentMain = R.id.container_custom_app_bar_include_on_fragment_main;
+    private final int appBarFragmentMain = R.id.trademark_image_view;
     public int getAppBarFragmentMain() {
         return appBarFragmentMain;
     }
