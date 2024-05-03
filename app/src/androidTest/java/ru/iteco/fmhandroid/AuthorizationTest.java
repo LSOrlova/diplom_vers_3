@@ -41,16 +41,6 @@ public class AuthorizationTest {
             authorizationSteps.clickLogOutButton();
         }
     }
-//    public void loginAuth() {
-//        AuthorizationSteps login = new AuthorizationSteps(authorizationPage);
-//        login.login();
-//        try {
-//            authorizationSteps.textAuthorization();
-//        } catch (androidx.test.espresso.NoMatchingViewException e) {
-//            authorizationSteps.clickExitButton();
-//            authorizationSteps.clickLogOutButton();
-//        }
-//    }
 
     @Test
     @Tag("2")
@@ -78,7 +68,6 @@ public class AuthorizationTest {
     @Story("Вход в приложение - отправка формы без логина")
     public void loginFieldIsEmpty() {
         authorizationSteps.textAuthorization();
-        authorizationSteps.clickLoginField(TestData.EMPTY_LOGIN);
         authorizationSteps.passwordTextInput(TestData.VALID_PASSWORD);
         authorizationSteps.clickSingInButton();
         authorizationSteps.textAuthorizationErrorEmpty();
@@ -90,8 +79,7 @@ public class AuthorizationTest {
     @Story("Вход в приложение - отправка формы без пароля")
     public void passwordFieldIsEmpty() {
         authorizationSteps.textAuthorization();
-        authorizationSteps.clickLoginField(TestData.VALID_PASSWORD);
-        authorizationSteps.passwordTextInput(TestData.EMPTY_PASSWORD);
+        authorizationSteps.clickLoginField(TestData.VALID_LOGIN);
         authorizationSteps.clickSingInButton();
         authorizationSteps.textAuthorizationErrorEmpty();
     }
@@ -100,7 +88,6 @@ public class AuthorizationTest {
     @Tag("6")
     @Story("Вход в приложение - ввод логина, состоящего из спец символов")
     public void loginFieldWithSpecialCharacters() {
-        authorizationSteps.textAuthorization();
         authorizationSteps.clickLoginField(TestData.SPECIAL_SYMBOLS_LOGIN);
         authorizationSteps.passwordTextInput(TestData.VALID_PASSWORD);
         authorizationSteps.clickSingInButton();
@@ -111,7 +98,6 @@ public class AuthorizationTest {
     @Tag("7")
     @Story("Вход в приложение - ввод логина на кириллице")
     public void loginFieldRussian() {
-        authorizationSteps.textAuthorization();
         authorizationSteps.clickLoginField(TestData.RUSSIAN_LOGIN);
         authorizationSteps.passwordTextInput(TestData.VALID_PASSWORD);
         authorizationSteps.clickSingInButton();
@@ -122,7 +108,6 @@ public class AuthorizationTest {
     @Tag("8")
     @Story("Вход в приложение - ввод логина на арабском")
     public void loginFieldArabian() {
-        authorizationSteps.textAuthorization();
         authorizationSteps.clickLoginField(TestData.ARABIAN_LOGIN);
         authorizationSteps.passwordTextInput(TestData.VALID_PASSWORD);
         authorizationSteps.clickSingInButton();
@@ -133,7 +118,6 @@ public class AuthorizationTest {
     @Tag("9")
     @Story("Вход в приложение - логин и пароль не существуют")
     public void loginPasswordNotExist() {
-        authorizationSteps.textAuthorization();
         authorizationSteps.clickLoginField(TestData.INVALID_LOGIN);
         authorizationSteps.passwordTextInput(TestData.INVALID_PASSWORD);
         authorizationSteps.clickSingInButton();

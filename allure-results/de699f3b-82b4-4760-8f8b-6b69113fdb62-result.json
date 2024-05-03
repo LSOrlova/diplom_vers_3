@@ -1,0 +1,129 @@
+{
+    "name": "loginFieldRussian",
+    "start": 1714746017986,
+    "stop": 1714746028629,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Ввести логин в поле Логин",
+            "start": 1714746023391,
+            "stop": 1714746023391,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввести пароль в поле Пароль",
+            "start": 1714746026161,
+            "stop": 1714746026161,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать кнопку Войти",
+            "start": 1714746026898,
+            "stop": 1714746026898,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ошибка Something went wrong. Try again later.",
+            "start": 1714746027461,
+            "stop": 1714746027461,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "de699f3b-82b4-4760-8f8b-6b69113fdb62",
+    "historyId": "38c281b6f3900846559e5a4fcdf4ec66",
+    "fullName": "ru.iteco.fmhandroid.AuthorizationTest.loginFieldRussian",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.AuthorizationTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "loginFieldRussian"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.AuthorizationTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1831)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Вход в приложение - ввод логина на кириллице"
+        },
+        {
+            "name": "tag",
+            "value": "7"
+        },
+        {
+            "name": "epic",
+            "value": "Functional tests Authorization page"
+        }
+    ]
+}
