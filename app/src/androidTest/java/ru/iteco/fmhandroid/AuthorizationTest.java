@@ -69,8 +69,8 @@ public class AuthorizationTest {
     @Story("Вход в приложение - отправка пустой формы")
     public void loginPasswordAreEmpty() {
         authorizationSteps.textAuthorization();
-        authorizationSteps.clickLoginField(TestData.EMPTY_LOGIN);
-        authorizationSteps.passwordTextInput(TestData.EMPTY_PASSWORD);
+//        authorizationSteps.clickLoginField(TestData.EMPTY_LOGIN);
+//        authorizationSteps.passwordTextInput(TestData.EMPTY_PASSWORD);
         authorizationSteps.clickSingInButton();
         authorizationSteps.textAuthorizationErrorWrong();
     }
