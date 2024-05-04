@@ -1,0 +1,93 @@
+{
+    "name": "goToMainFromOurMissionPage",
+    "start": 1714829277845,
+    "stop": 1714829285276,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Клик по баннеру ВХосписе",
+            "start": 1714829283790,
+            "stop": 1714829283790,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Отображаются все новости",
+            "start": 1714829284146,
+            "stop": 1714829284146,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "33577a11-fedb-474c-b68d-b18eafdaea23",
+    "historyId": "f9016ed3bd20bf2dbf178c6b54a1415",
+    "fullName": "ru.iteco.fmhandroid.MainPageTest.goToMainFromOurMissionPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "goToMainFromOurMissionPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(2586)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Переход на главную страницу через клик по баннеру ВХОСПИСЕ - обновление страницы"
+        },
+        {
+            "name": "tag",
+            "value": "13"
+        }
+    ]
+}

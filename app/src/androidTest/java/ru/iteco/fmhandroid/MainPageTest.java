@@ -40,23 +40,24 @@ public class MainPageTest {
     @Rule
     public ActivityScenarioRule<AppActivity> activityTestRule = new ActivityScenarioRule<>(AppActivity.class);
 
-    @Before
-    public void setUp() {
-        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 5000));
-        if (authorizationSteps.isDisplayedButtonProfile()) {
-            authorizationSteps.clickLogOutButton();
-        }
-    }
-    public void loginAuth() {
-        AuthorizationSteps loginSteps = new AuthorizationSteps(authorizationPage);
-        loginSteps.login();
-        try {
-            authorizationSteps.textAuthorization();
-        } catch (androidx.test.espresso.NoMatchingViewException e) {
-            authorizationSteps.clickExitButton();
-            authorizationSteps.clickLogOutButton();
-        }
-    }
+//    @Before
+//    public void setUp() {
+//        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 7000));
+//        if (authorizationSteps.isDisplayedButtonProfile()) {
+//            authorizationSteps.clickLogOutButton();
+//        }
+//    }
+//
+//    public void loginAuth() {
+//        AuthorizationSteps loginSteps = new AuthorizationSteps(authorizationPage);
+//        loginSteps.login();
+//        try {
+//            authorizationSteps.textAuthorization();
+//        } catch (androidx.test.espresso.NoMatchingViewException e) {
+//            authorizationSteps.clickExitButton();
+//            authorizationSteps.clickLogOutButton();
+//        }
+//    }
 
     @Test
     @Tag("10")
@@ -86,17 +87,18 @@ public class MainPageTest {
     @Test
     @Tag("13")
     @Story("Переход на главную страницу через клик по баннеру ВХОСПИСЕ - обновление страницы")
-    public void goToMainFromOurMissionButton() {
-        mainPageSteps.ourMissionButton();
-        mainPageSteps.newsPage();
+    public void goToMainFromOurMissionPage() {
+        mainPageSteps.clickOurMissionButtonTopBar();
+        ourMissionSteps.ourMissionPage();
+        mainPageSteps.clickMainBanner();
+        mainPageSteps.checkNewsFromContainer();
     }
 
     @Test
     @Tag("15")
     @Story("Переход в раздел Love is all")
     public void goToLoveIsAllPage() {
-        mainPageSteps.newsPage();
-        ourMissionSteps.clickOurMissionButton();
+        mainPageSteps.clickOurMissionButtonTopBar();
         ourMissionSteps.ourMissionPage();
     }
 }

@@ -17,6 +17,10 @@ import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.steps.AuthorizationSteps;
 
 public class AuthorizationPage {
+    private final int appBarFragmentMain = R.id.container_custom_app_bar_include_on_fragment_main;
+    public int getAppBarFragmentMain() {
+        return appBarFragmentMain;
+    }
     public class LoginField {
         private static final int LOGIN_TEXT_INPUT_LAYOUT_ID = R.id.login_text_input_layout;
 
@@ -75,9 +79,6 @@ public class AuthorizationPage {
             return onView(allOf(withId(AUTHORIZATION_IMAGE_BUTTON_ID)));
         }
     }
-    private final int appBarFragmentMain = R.id.trademark_image_view;
-    public int getAppBarFragmentMain() {
-        return appBarFragmentMain;
-    }
+
 
 }

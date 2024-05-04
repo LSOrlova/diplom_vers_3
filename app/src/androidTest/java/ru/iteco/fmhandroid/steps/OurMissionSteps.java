@@ -13,12 +13,12 @@ import io.qameta.allure.kotlin.Allure;
 import ru.iteco.fmhandroid.pages.OurMissionPage;
 
 public class OurMissionSteps {
-    OurMissionPage missionPage = new OurMissionPage();
-    Matcher<View> loveButtonMatcher = missionPage.ourMissionLoveButton();
-    Matcher<View> listMatcher = missionPage.ourMissionList();
-    Matcher<View> cardTitleMatcher = missionPage.ourMissionCardTitle();
-    Matcher<View> openCardButtonMatcher = missionPage.ourMissionOpenCardButton();
-    Matcher<View> cardTextMatcher = missionPage.ourMissionCardText();
+    OurMissionPage ourMissionPage = new OurMissionPage();
+    Matcher<View> loveButtonMatcher = ourMissionPage.ourMissionLoveButton();
+    Matcher<View> listMatcher = ourMissionPage.ourMissionList();
+    Matcher<View> cardTitleMatcher = ourMissionPage.ourMissionCardTitle();
+    Matcher<View> openCardButtonMatcher = ourMissionPage.ourMissionOpenCardButton();
+    Matcher<View> cardTextMatcher = ourMissionPage.ourMissionCardText();
 
     public OurMissionSteps(OurMissionPage ourMissionPage) {
     }

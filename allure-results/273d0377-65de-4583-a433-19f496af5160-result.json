@@ -1,0 +1,93 @@
+{
+    "name": "gotoAllNewsPage",
+    "start": 1714808831593,
+    "stop": 1714808839256,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Нажать на кнопку All news",
+            "start": 1714808837392,
+            "stop": 1714808837392,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Отображаются все новости",
+            "start": 1714808838124,
+            "stop": 1714808838124,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "273d0377-65de-4583-a433-19f496af5160",
+    "historyId": "f67c4bc6f81faedaf82a17f8b071fae",
+    "fullName": "ru.iteco.fmhandroid.MainPageTest.gotoAllNewsPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "gotoAllNewsPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(2278)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Главная страница - свернуть развернуть All news"
+        },
+        {
+            "name": "tag",
+            "value": "11"
+        }
+    ]
+}

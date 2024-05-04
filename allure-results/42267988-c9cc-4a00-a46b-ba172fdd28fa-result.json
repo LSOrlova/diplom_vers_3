@@ -1,0 +1,93 @@
+{
+    "name": "goToLoveIsAllPage",
+    "start": 1714827844593,
+    "stop": 1714827852380,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Нажать на кнопку Наша Миссия в верхней панели",
+            "start": 1714827850281,
+            "stop": 1714827850282,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Отображается страница Наша миссия",
+            "start": 1714827851172,
+            "stop": 1714827851172,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "42267988-c9cc-4a00-a46b-ba172fdd28fa",
+    "historyId": "e7ff97fa7d531759ca16584eed3c633b",
+    "fullName": "ru.iteco.fmhandroid.MainPageTest.goToLoveIsAllPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "goToLoveIsAllPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(2571)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Переход в раздел Love is all"
+        },
+        {
+            "name": "tag",
+            "value": "15"
+        }
+    ]
+}
