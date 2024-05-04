@@ -40,24 +40,24 @@ public class MainPageTest {
     @Rule
     public ActivityScenarioRule<AppActivity> activityTestRule = new ActivityScenarioRule<>(AppActivity.class);
 
-//    @Before
-//    public void setUp() {
-//        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 7000));
-//        if (authorizationSteps.isDisplayedButtonProfile()) {
-//            authorizationSteps.clickLogOutButton();
-//        }
-//    }
-//
-//    public void loginAuth() {
-//        AuthorizationSteps loginSteps = new AuthorizationSteps(authorizationPage);
-//        loginSteps.login();
-//        try {
-//            authorizationSteps.textAuthorization();
-//        } catch (androidx.test.espresso.NoMatchingViewException e) {
-//            authorizationSteps.clickExitButton();
-//            authorizationSteps.clickLogOutButton();
-//        }
-//    }
+    @Before
+    public void setUp() {
+        onView(isRoot()).perform(waitId(authorizationPage.getAppBarFragmentMain(), 7000));
+        if (authorizationSteps.isDisplayedButtonProfile()) {
+            authorizationSteps.clickLogOutButton();
+        }
+    }
+
+    public void loginAuth() {
+        AuthorizationSteps loginSteps = new AuthorizationSteps(authorizationPage);
+        loginSteps.login();
+        try {
+            authorizationSteps.textAuthorization();
+        } catch (androidx.test.espresso.NoMatchingViewException e) {
+            authorizationSteps.clickExitButton();
+            authorizationSteps.clickLogOutButton();
+        }
+    }
 
     @Test
     @Tag("10")

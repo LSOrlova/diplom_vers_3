@@ -16,8 +16,10 @@ import org.junit.runner.RunWith;
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
 import io.qameta.allure.kotlin.Story;
 import io.qameta.allure.kotlin.junit4.Tag;
+import ru.iteco.fmhandroid.pages.MainPage;
 import ru.iteco.fmhandroid.pages.OurMissionPage;
 import ru.iteco.fmhandroid.steps.AuthorizationSteps;
+import ru.iteco.fmhandroid.steps.MainPageSteps;
 import ru.iteco.fmhandroid.steps.OurMissionSteps;
 import ru.iteco.fmhandroid.ui.AppActivity;
 import ru.iteco.fmhandroid.pages.AuthorizationPage;
@@ -29,8 +31,11 @@ public class OurMissionTest {
     AuthorizationSteps authorizationSteps = new AuthorizationSteps(authorizationPage);
     OurMissionPage missionPage = new OurMissionPage();
     OurMissionSteps ourMissionSteps = new OurMissionSteps(missionPage);
+    MainPage mainPage = new MainPage();
+    MainPageSteps mainPageSteps = new MainPageSteps(mainPage);
+
     @Rule
-    public ActivityScenarioRule<AppActivity> activityTestRule = new ActivityScenarioRule<>(AppActivity.class);
+    public ActivityScenarioRule<AppActivity> mActivityTestRule = new ActivityScenarioRule<>(AppActivity.class);
 
 
     @Before
@@ -40,6 +45,7 @@ public class OurMissionTest {
             authorizationSteps.clickLogOutButton();
         }
     }
+
     public void loginAuth() {
         AuthorizationSteps login = new AuthorizationSteps(authorizationPage);
         login.login();
@@ -55,7 +61,7 @@ public class OurMissionTest {
     @Tag("37")
     @Story("Кнопка Свернуть / Развернуть запись по стрелке")
     public void clickOurMissionExpandItem() {
-        ourMissionSteps.clickOurMissionButton();
+        mainPageSteps.clickOurMissionButtonTopBar();
         ourMissionSteps.ourMissionExpandItem();
         ourMissionSteps.ourMissionItemText();
     }

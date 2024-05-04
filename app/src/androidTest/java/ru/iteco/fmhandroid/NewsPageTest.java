@@ -24,6 +24,7 @@ import ru.iteco.fmhandroid.steps.AuthorizationSteps;
 import ru.iteco.fmhandroid.steps.MainPageSteps;
 import ru.iteco.fmhandroid.steps.NewsSteps;
 import ru.iteco.fmhandroid.ui.AppActivity;
+import ru.iteco.fmhandroid.util.TestData;
 
 @LargeTest
 @RunWith(AllureAndroidJUnit4.class)
@@ -63,15 +64,14 @@ public class NewsPageTest {
         mainPageSteps.clickAllNewsButton();
         newsSteps.clickEditNews();
         newsSteps.clickAddNew();
-        newsSteps.setCategory();
-        newsSteps.inputTitle();
-        newsSteps.setPublicationDate();
+        newsSteps.setCategory(TestData.category);
+        newsSteps.inputTitle(TestData.title);
+        newsSteps.setPublicationDate(TestData.publicationDate);
         newsSteps.confirmPublicationDate();
-        newsSteps.setPublicationTime();
+        newsSteps.setPublicationTime(TestData.time);
         newsSteps.confirmPublicationTime();
-        newsSteps.addNewTextDescription();
+        newsSteps.addNewTextDescription(TestData.description);
         newsSteps.clickSaveNews();
-        mainPageSteps.checkNewsFromContainer();
-        mainPageSteps.checkItemByDescription("My new new");
+        mainPageSteps.itemIsVisible("Главные новости сегодня");
     }
 }

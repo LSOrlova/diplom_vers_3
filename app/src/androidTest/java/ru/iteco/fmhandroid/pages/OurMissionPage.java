@@ -2,6 +2,8 @@ package ru.iteco.fmhandroid.pages;
 
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.allOf;
+import static ru.iteco.fmhandroid.WaitId.waitUntilElement;
+
 import android.view.View;
 import org.hamcrest.Matcher;
 import ru.iteco.fmhandroid.R;
@@ -24,6 +26,7 @@ public class OurMissionPage {
     }
 
     public Matcher<View> ourMissionOpenCardButton() {
+        waitUntilElement(R.id.our_mission_item_open_card_image_button);
         return Matchers.allOf(withId(R.id.our_mission_item_open_card_image_button));
     }
 
