@@ -46,6 +46,7 @@ public class NewsPageTest {
             authorizationSteps.clickLogOutButton();
         }
     }
+
     public void loginAuth() {
         AuthorizationSteps login = new AuthorizationSteps(authorizationPage);
         login.login();
@@ -73,5 +74,14 @@ public class NewsPageTest {
         newsSteps.addNewTextDescription(TestData.description);
         newsSteps.clickSaveNews();
         mainPageSteps.itemIsVisible("Главные новости сегодня");
+    }
+
+    @Test
+    @Tag("20")
+    @Story("Удаление новости")
+    public void deleteNew() {
+        mainPageSteps.clickAllNewsButton();
+        newsSteps.clickEditNews();
+        newsSteps.clickDeleteNews("Главные новости сегодня");
     }
 }

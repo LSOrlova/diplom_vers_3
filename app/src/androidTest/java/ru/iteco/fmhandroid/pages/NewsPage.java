@@ -80,5 +80,9 @@ public class NewsPage {
             return allOf(withId(SAVE_BUTTON_ID));
         }
     }
+    public class DeleteNewsButton {
+        private static final int DELETE_NEWS_BUTTON_ID = R.id.delete_news_item_image_view;
+        public Matcher<View> getDeleteNewsButton(String text) {return allOf(withId(DELETE_NEWS_BUTTON_ID));}
+    }
 }
 

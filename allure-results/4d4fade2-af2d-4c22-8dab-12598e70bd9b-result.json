@@ -1,0 +1,109 @@
+{
+    "name": "deleteNew",
+    "start": 1714895510327,
+    "stop": 1714895519365,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Нажать на кнопку All news",
+            "start": 1714895516012,
+            "stop": 1714895516014,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Редактировать новости",
+            "start": 1714895516464,
+            "stop": 1714895516466,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать кнопку Удалить новость",
+            "start": 1714895517190,
+            "stop": 1714895517191,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "4d4fade2-af2d-4c22-8dab-12598e70bd9b",
+    "historyId": "d10705fc162038b06ac9a59fb80dfb70",
+    "fullName": "ru.iteco.fmhandroid.NewsPageTest.deleteNew",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.NewsPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "deleteNew"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.NewsPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1038)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Удаление новости"
+        },
+        {
+            "name": "tag",
+            "value": "20"
+        }
+    ]
+}

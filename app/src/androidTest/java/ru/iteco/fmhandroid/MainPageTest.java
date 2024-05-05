@@ -26,7 +26,7 @@ import ru.iteco.fmhandroid.steps.AuthorizationSteps;
 import ru.iteco.fmhandroid.steps.MainPageSteps;
 import ru.iteco.fmhandroid.ui.AppActivity;
 
-//@LargeTest
+@LargeTest
 @RunWith(AllureAndroidJUnit4.class)
 public class MainPageTest {
     AuthorizationPage authorizationPage = new AuthorizationPage();

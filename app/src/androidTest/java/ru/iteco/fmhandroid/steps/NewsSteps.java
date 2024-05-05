@@ -6,8 +6,22 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.action.ViewActions.scrollTo;
+import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition;
+import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
+
+import static org.hamcrest.Matchers.allOf;
+
+import android.view.View;
+
+import androidx.test.espresso.ViewInteraction;
 
 import io.qameta.allure.kotlin.Allure;
+import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.pages.NewsPage;
 
 public class NewsSteps {
@@ -76,5 +90,26 @@ public class NewsSteps {
         NewsPage.AddNewSaveButton addNewSaveButton = newsPage.new AddNewSaveButton();
         Allure.step("Нажать кнопку Сохранить новость");
         onView(addNewSaveButton.getAddNewSaveButton()).perform(scrollTo(), click());
+    }
+
+    public void clickDeleteNews(String text) {
+        NewsPage.DeleteNewsButton deleteNewsButton = newsPage.new DeleteNewsButton();
+        NewsPage.AddNewSaveButton addNewSaveButton = newsPage.new AddNewSaveButton();
+        NewsPage.AddNewPublicationDateOk buttonOK = newsPage.new AddNewPublicationDateOk();
+        Allure.step("Нажать кнопку Удалить новость");
+        ViewInteraction delete = onView(deleteNewsButton.getDeleteNewsButton(text));
+        delete.check(matches(isDisplayed()));
+        delete.perform(click());
+        onView(buttonOK.getAddNewPublicationDateOk()).perform(scrollTo(), click());
+    }
+
+    public void searchNewsAndCheckIsDisplayed(String text) {
+        Allure.step("Поиск новости и проверка ее видимости");
+        onView(withText(text)).check(matches(isDisplayed()));
+    }
+
+    public void checkDoesNotExistNews(String text) {
+        Allure.step("Проверка отсутствия новости");
+        onView(withText(text)).check(doesNotExist());
     }
 }

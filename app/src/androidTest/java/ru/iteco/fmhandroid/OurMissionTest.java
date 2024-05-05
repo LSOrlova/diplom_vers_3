@@ -16,12 +16,14 @@ import org.junit.runner.RunWith;
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
 import io.qameta.allure.kotlin.Story;
 import io.qameta.allure.kotlin.junit4.Tag;
+import ru.iteco.fmhandroid.ui.AppActivity;
 import ru.iteco.fmhandroid.pages.MainPage;
+import ru.iteco.fmhandroid.pages.NewsPage;
 import ru.iteco.fmhandroid.pages.OurMissionPage;
 import ru.iteco.fmhandroid.steps.AuthorizationSteps;
 import ru.iteco.fmhandroid.steps.MainPageSteps;
+import ru.iteco.fmhandroid.steps.NewsSteps;
 import ru.iteco.fmhandroid.steps.OurMissionSteps;
-import ru.iteco.fmhandroid.ui.AppActivity;
 import ru.iteco.fmhandroid.pages.AuthorizationPage;
 
 @LargeTest
@@ -29,14 +31,13 @@ import ru.iteco.fmhandroid.pages.AuthorizationPage;
 public class OurMissionTest {
     AuthorizationPage authorizationPage = new AuthorizationPage();
     AuthorizationSteps authorizationSteps = new AuthorizationSteps(authorizationPage);
-    OurMissionPage missionPage = new OurMissionPage();
-    OurMissionSteps ourMissionSteps = new OurMissionSteps(missionPage);
     MainPage mainPage = new MainPage();
     MainPageSteps mainPageSteps = new MainPageSteps(mainPage);
+    OurMissionPage ourMissionPage = new OurMissionPage();
+    OurMissionSteps ourMissionSteps = new OurMissionSteps(ourMissionPage);
 
     @Rule
-    public ActivityScenarioRule<AppActivity> mActivityTestRule = new ActivityScenarioRule<>(AppActivity.class);
-
+    public ActivityScenarioRule<AppActivity> activityScenarioRule = new ActivityScenarioRule<>(AppActivity.class);
 
     @Before
     public void setUp() {
@@ -59,7 +60,7 @@ public class OurMissionTest {
 
     @Test
     @Tag("37")
-    @Story("Кнопка Свернуть / Развернуть запись по стрелке")
+    @Story("Кнопка Свернуть / Развернуть цитату по стрелке")
     public void clickOurMissionExpandItem() {
         mainPageSteps.clickOurMissionButtonTopBar();
         ourMissionSteps.ourMissionExpandItem();

@@ -20,6 +20,7 @@ import ru.iteco.fmhandroid.pages.MainPage;
 
 public class MainPageSteps {
     MainPage mainPage = new MainPage();
+
     public MainPageSteps(MainPage mainPageSteps) {
     }
 
@@ -36,10 +37,11 @@ public class MainPageSteps {
     public void ourMissionButton() {
         onView(withId(R.id.our_mission_image_button)).check(matches(isDisplayed()));
     }
+
     public void clickMainBanner() {
-       Matcher<View> mainBanner = mainPage.mainBanner();
-       Allure.step("Клик по баннеру ВХосписе");
-       onView(mainBanner).perform(click());
+        Matcher<View> mainBanner = mainPage.mainBanner();
+        Allure.step("Клик по баннеру ВХосписе");
+        onView(mainBanner).perform(click());
     }
 
     public void clickContainerNews() {
@@ -74,6 +76,7 @@ public class MainPageSteps {
         onView(withId(R.id.news_list_recycler_view)).perform(actionOnItemAtPosition(0, click()));
         onView(allOf(withId(R.id.news_item_description_text_view), withText(description))).check(matches(isDisplayed()));
     }
+
     public void clickOurMissionButtonTopBar() {
         Matcher<View> ourMissionButtonMatcher = mainPage.getMainOurMissionButton();
         Allure.step(("Нажать на кнопку Наша Миссия в верхней панели"));
